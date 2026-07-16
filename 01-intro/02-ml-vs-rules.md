@@ -17,12 +17,15 @@ ML can be used to solve this problem with the following steps:
 Emails from the user's spam folder and inbox give examples of spam and non-spam.
 
 ### 2. Define and calculate features
-Rules/characteristics from rule-based systems can be used as a starting point to define features for the ML model. The value of the target variable for each email can be defined based on where the email was obtained from (spam folder or inbox).
+>Rules/characteristics from rule-based systems can be used as a **starting point** to define features for the ML model. 
+The value of the target variable for each email can be defined based on where the email was obtained from (spam folder or inbox).
 
 Each email can be encoded (converted) to the values of its features and target.
 
-### 3. Train and use the model
-A machine learning algorithm can then be applied to the encoded emails to build a model that can predict whether a new email is spam or not spam. The **predictions are probabilities**, and to make a decision it is necessary to define a threshold to classify emails as spam or not spam. 
+### 3. Train/fit and use the model
+A machine learning algorithm can then be applied to the encoded emails to build a model that can predict whether a new email is spam or not spam. The model will then learn the *patterns* and behaviors of the features and understand them in a way that best solves the prediction problem. 
+
+The **predictions are probabilities (classification problem)**, and to make a decision it is necessary to *define* a threshold to classify emails as spam or not spam. 
 
 
 <table>
