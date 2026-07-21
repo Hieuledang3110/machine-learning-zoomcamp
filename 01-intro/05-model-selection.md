@@ -26,13 +26,12 @@ good predictions because all of them are probabilistic.
 The test set can help to avoid the MCP. Obtaining the best model is done with the training and validation datasets, while the test dataset is used for assuring that the proposed best model is the best. 
 
 1. Split datasets in training, validation, and test. E.g. 60%, 20% and 20% respectively 
-2. Train the models
-3. Evaluate the models
-4. Select the best model 
+2. Train the models on train set
+3. Evaluate the models on validation set
+4. Select the best model, train it on (train + validation) set
 5. Apply the best model to the test dataset 
-6. Compare the performance metrics of validation and test
+6. Compare the performance metrics of validation and test (check stability/validity)
 
-<u>NB:</u> Note that it is possible to reuse the validation data. After selecting the best model (step 4), the validation and training datasets can be combined to form a single training dataset for the chosen model before testing it on the test set.
 
 <table>
    <tr>
